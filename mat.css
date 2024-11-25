@@ -1,0 +1,118 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b6b6f3;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #5c4ce7;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff4f30;
+    border-radius: 5px;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilo das seções de carrossel e texto */
+.carousel-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Carrossel */
+.carousel {
+    position: relative;
+    width: 60%;
+    max-width: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%;
+}
+
+.carousel-inner img {
+    width: 450px;
+    flex-shrink: 0;
+}
+
+/* Botões de navegação */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+/* Texto ao lado do carrossel */
+.text-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.text-content h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.text-content p {
+    color: #555;
+    font-size: 18px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #5c4ce7;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}

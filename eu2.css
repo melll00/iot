@@ -1,0 +1,169 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9090ff;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #5c4ce7;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff4f30; /* Cor do texto ao passar o mouse */
+    font-size: 1.1em; /* Aumenta o tamanho do texto */
+    border-bottom: 2px solid #FF6347; /* Borda inferior */
+    background-color: #000000; /* Fundo */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+/* Estilização do conteúdo principal */
+main#conteudo {
+    padding: 20px;
+    background: rgb(205, 180, 244);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden; /* Garante que imagens ou conteúdo extra não ultrapassem os limites */
+}
+
+/* Imagens */
+#imagens {
+    display: flex; /* Define um container flexível */
+    justify-content: space-between; /* Espaçamento entre as imagens */
+    gap: 50; /* Espaço entre as imagens */
+    flex-wrap: wrap; /* Permite que imagens se ajustem em telas menores */
+}
+
+img {
+    width: 100%; /* Imagem ocupa toda a largura disponível no container */
+    max-width: 500px; /* Define um tamanho máximo */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    margin: 40px;
+}
+
+.bi {
+    width: 450px; /* Ajuste do tamanho da imagem adicional */
+    max-width: 500px; /* Define um tamanho máximo */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #imagens {
+        flex-direction: column; /* Coloca as imagens em uma coluna em telas menores */
+        align-items: center; /* Centraliza as imagens */
+    }
+
+    img, .bi {
+        max-width: 90%; /* Ajusta o tamanho para telas menores */
+        width: auto;
+        margin: 10px 0;
+    }
+}
+
+/* Texto */
+h1 {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding: 15px 0;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: right;
+    margin: 20px 0;
+}
+
+/* Caixas de texto */
+.box {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box2 {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    #imagens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img, .bi {
+        max-width: 90%;
+        width: auto;
+        margin: 10px auto;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .box2 {
+        position: relative;
+        width: auto;
+        margin: 20px auto;
+    }
+}
+
+footer {
+    background-color: #5c4ce7; /* Mesma cor do cabeçalho para uniformidade */
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Espaçamento interno */
+    margin-top: 20px; /* Espaço acima do rodapé */
+    font-size: 14px;
+    border-top: 3px solid #ff4f30; /* Linha de destaque no topo do rodapé */
+}
+
+footer a {
+    color: #ff4f30; /* Cor dos links */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: #ffffff; /* Cor ao passar o mouse */
+    text-decoration: underline; /* Sublinhado no hover */
+}
